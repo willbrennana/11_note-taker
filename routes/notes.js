@@ -1,6 +1,6 @@
 const notes = require("express").Router();
-// const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
-// const { v4: uuidv4 } = require('uuid');
+const { readFromFile, readAndAppend } = require("../helper/fsUtils");
+const { v4: uuidv4 } = require("uuid");
 
 // GET Route for retrieving all the notes
 notes.get("/", (req, res) => {
@@ -15,17 +15,16 @@ notes.post("/", (req, res) => {
 
   if (req.body) {
     const newNote = {
-      username,
-      tip,
-      topic,
-      tip_id: uuidv4(),
+      title,
+      text,
+      note_id: uuidv4(),
     };
 
-    readAndAppend(newTip, "./db/");
-    res.json(`Tip added successfully 🚀`);
+    readAndAppend(newNote, "./db/db.json");
+    res.json(`Note added successfully 🚀`);
   } else {
-    res.error("Error in adding tip");
+    res.error("Error in adding note");
   }
 });
 
-module.exports = tips;
+module.exports = notes;
