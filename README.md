@@ -1,5 +1,11 @@
 # Note Taker
 
+This was my first challenge using Heroku to deploy an app using server.js.
+
+Debugging the code provided required exploring the front-end files under the public folder and adding index.js and notes.js files under the routes folder.
+
+Adding the bonus delete root ended up proving to be more difficult than expected due to the double .json's.
+
 As specified in the Challenge Acceptance Criteria, the note taker achieves the following:
 
 ✨ A landing page with a link to a notes page.
@@ -13,6 +19,8 @@ As specified in the Challenge Acceptance Criteria, the note taker achieves the f
 ✨ Clicking on an existing note makes it appear in the right-hand column.
 
 ✨ The Write icon presents empty fields to enter a new note title and the note’s text in the right-hand column.
+
+✨ Bonus: The Trash icon deletes the corresponding note in the left-hand column.
 
 Below is a screenshot of my latest and greatest:
 
