@@ -18,4 +18,4 @@ Below is a screenshot of my latest and greatest:
 
 ![](./ProjectScreenshot.png)
 
-For your next note-taking session, click [here]().
+For your next note-taking session, click [here](https://willyb-notetaker.herokuapp.com).
